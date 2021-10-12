@@ -1,0 +1,24 @@
+test_average (__main__.TestExercice) ... ok
+test_square (__main__.TestExercice) ... ok
+test_square_root (__main__.TestExercice) ... ok
+test_to_celsius (__main__.TestExercice) ... ok
+test_to_degrees (__main__.TestExercice) ... ERROR
+test_to_farenheit (__main__.TestExercice) ... ok
+test_to_radians (__main__.TestExercice) ... ok
+
+======================================================================
+ERROR: test_to_degrees (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 80, in test_to_degrees
+    output = [exercice.to_degrees(v) for v in values]
+  File "test_exercice.py", line 80, in <listcomp>
+    output = [exercice.to_degrees(v) for v in values]
+  File "/home/runner/work/2021a-c01-ch3-exercices-Nofissa/2021a-c01-ch3-exercices-Nofissa/exercice.py", line 25, in to_degrees
+    return [math.degrees(angles_rads), (angle_rads * 60), (angle_rads * 3600)]
+NameError: name 'angles_rads' is not defined
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+FAILED (errors=1)
